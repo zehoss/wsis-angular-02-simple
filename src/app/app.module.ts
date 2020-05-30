@@ -12,6 +12,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {AdminComponent} from './admin/admin.component';
 import {AdminCarListComponent} from './admin/admin-car-list/admin-car-list.component';
 import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-customer-list.component';
+import {CarDetailsComponent} from './car-tiles/car-details/car-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-cust
     CustomerListComponent,
     AdminComponent,
     AdminCarListComponent,
-    AdminCustomerListComponent
+    AdminCustomerListComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,

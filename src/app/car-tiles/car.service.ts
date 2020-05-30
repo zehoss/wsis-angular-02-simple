@@ -24,4 +24,8 @@ export class CarService {
     console.log('simulating slow server connection...');
     return of(this.carList);
   }
+
+  findById(carId: number): Car {
+    return this.carList.find(car => car.id === carId);
+  }
 }

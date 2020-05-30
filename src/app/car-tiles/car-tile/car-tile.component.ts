@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CarTileComponent implements OnInit {
 
+  @Input() id;
   @Input() carName;
   @Input() price;
   @Input() limit;
