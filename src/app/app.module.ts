@@ -8,6 +8,7 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {MainContentComponent} from './main-content/main-content.component';
 import {CustomerListComponent} from './customer-list/customer-list.component';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {CustomerListComponent} from './customer-list/customer-list.component';
     CustomerListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
