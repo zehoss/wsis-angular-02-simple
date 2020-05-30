@@ -2,4 +2,6 @@
   <div>Name: {{carName}}</div>
   <div>Price: {{price}}</div>
   <div *ngIf="limit > 0">Limit: {{limit}}km</div>
+
+  <button [class.disabled]="available !== true" class="button" disabled\>Wypożycz</button>
 </div>
