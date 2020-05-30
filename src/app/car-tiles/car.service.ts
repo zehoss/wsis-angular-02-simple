@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Car} from './car';
+import {Observable, of} from 'rxjs';
+import {delay} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +21,8 @@ export class CarService {
     ];
   }
 
-  getCars(): Car[] {
-    return this.carList;
+  getCars(): Observable<Car[]> {
+    console.log('simulating slow server connection...');
+    return of(this.carList).pipe(delay(3000));
   }
 }
