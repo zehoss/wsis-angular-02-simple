@@ -1,4 +1,5 @@
 <div class="tile">
-  Text: {{carName}}<br/>
-  Price: {{price}}
+  <div>Name: {{carName}}</div>
+  <div>Price: {{price}}</div>
+  <div *ngIf="limit > 0">Limit: {{limit}}km</div>
 </div>
