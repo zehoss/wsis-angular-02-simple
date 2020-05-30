@@ -6,6 +6,7 @@ import {CarTileComponent} from './car-tiles/car-tile/car-tile.component';
 import {CarTilesComponent} from './car-tiles/car-tiles.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
+import {MainContentComponent} from './main-content/main-content.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {FooterComponent} from './footer/footer.component';
     CarTileComponent,
     CarTilesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule
