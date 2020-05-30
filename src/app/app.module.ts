@@ -9,6 +9,9 @@ import {FooterComponent} from './footer/footer.component';
 import {MainContentComponent} from './main-content/main-content.component';
 import {CustomerListComponent} from './customer-list/customer-list.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
+import {AdminComponent} from './admin/admin.component';
+import {AdminCarListComponent} from './admin/admin-car-list/admin-car-list.component';
+import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-customer-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
     HeaderComponent,
     FooterComponent,
     MainContentComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    AdminComponent,
+    AdminCarListComponent,
+    AdminCustomerListComponent
   ],
   imports: [
     BrowserModule,
