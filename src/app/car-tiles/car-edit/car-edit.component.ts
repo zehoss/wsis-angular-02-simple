@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Car} from '../car';
 import {CarService} from '../car.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-car-edit',
@@ -10,6 +11,7 @@ import {CarService} from '../car.service';
 })
 export class CarEditComponent implements OnInit {
 
+  @ViewChild('form') form: NgForm;
   carId: number;
   car: Car;
 
@@ -24,7 +26,16 @@ export class CarEditComponent implements OnInit {
   }
 
   onSubmit() {
+    // model danych formularza
     console.log('submitted', this.car);
+    // dane z formularza
+    console.log(this.form.value);
+    // czy formularz spełnia warunki walidacji
+    console.log(this.form.valid);
+    // czy dane formularza zostały zmienione przez użytkownika
+    console.log(this.form.dirty);
+    // czy formularz został "dotknięty" przez użytkownika (próbował zmienić dane, ale niekoniecznie zmienił wartości)
+    console.log(this.form.touched);
 
     // TODO:
     // this.httpClient.post...
