@@ -1,8 +1,11 @@
-<p>admin works!</p>
+<div class="wrapper">
+  <H1>Admin Panel</H1>
 
-<div>
-  <a routerLink="/admin/cars">Cars</a>
-  <a routerLink="/admin/customers">Customers</a>
+  <nav>
+    <a routerLink="/admin/cars">Cars</a>
+    <a routerLink="/admin/customers">Customers</a>
+  </nav>
+
+  <router-outlet></router-outlet>
+
 </div>
-
-<router-outlet></router-outlet>
