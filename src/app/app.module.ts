@@ -13,6 +13,8 @@ import {AdminComponent} from './admin/admin.component';
 import {AdminCarListComponent} from './admin/admin-car-list/admin-car-list.component';
 import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-customer-list.component';
 import {CarDetailsComponent} from './car-tiles/car-details/car-details.component';
+import {CarEditComponent} from './car-tiles/car-edit/car-edit.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import {CarDetailsComponent} from './car-tiles/car-details/car-details.component
     AdminComponent,
     AdminCarListComponent,
     AdminCustomerListComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    CarEditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
