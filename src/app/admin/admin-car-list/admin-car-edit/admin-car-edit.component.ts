@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {CarService} from '../../../car-tiles/car.service';
 import {Car} from '../../../car-tiles/car';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-admin-car-edit',
@@ -29,7 +29,7 @@ export class AdminCarEditComponent implements OnInit {
         this.car = car;
 
         this.carEditForm = this.fb.group({
-          name: [this.car.name],
+          name: [this.car.name, Validators.required],
           platesNumber: [this.car.platesNumber]
         });
       });
