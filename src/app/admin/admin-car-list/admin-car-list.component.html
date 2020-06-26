@@ -1,1 +1,7 @@
-<p>admin-car-list works!</p>
+<table>
+  <tr *ngFor="let car of cars" class="tile">
+    <td>Name: {{car.name}}</td>
+    <td>Plates: {{car.platesNumber}}</td>
+    <td><a routerLink="{{car.id}}/edit">Edit</a></td>
+  </tr>
+</table>

@@ -20,7 +20,7 @@ export class CarDetailsComponent implements OnInit {
     this.route.params.subscribe(params => {
       // parametr jest typu String, dlatego musimy wymusić, żeby został zrzutowany na typ number
       this.carId = +params.id;
-      this.car = this.carService.findById(this.carId);
+      this.carService.findById(this.carId).subscribe(car => this.car = car);
     });
   }
 

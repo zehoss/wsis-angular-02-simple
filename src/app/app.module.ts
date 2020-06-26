@@ -14,8 +14,9 @@ import {AdminCarListComponent} from './admin/admin-car-list/admin-car-list.compo
 import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-customer-list.component';
 import {CarDetailsComponent} from './car-tiles/car-details/car-details.component';
 import {CarEditComponent} from './car-tiles/car-edit/car-edit.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {AdminCarEditComponent} from './admin/admin-car-list/admin-car-edit/admin-car-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +31,15 @@ import {HttpClientModule} from '@angular/common/http';
     AdminCarListComponent,
     AdminCustomerListComponent,
     CarDetailsComponent,
-    CarEditComponent
+    CarEditComponent,
+    AdminCarEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

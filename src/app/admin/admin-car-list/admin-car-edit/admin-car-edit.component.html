@@ -1,0 +1,22 @@
+<p>admin-car-edit - Reactive form example</p>
+
+<div *ngIf="car">
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="carEditForm">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" type="text">
+      </label>
+    </div>
+    <div>
+      <label>
+        Plates:
+        <input formControlName="platesNumber" name="price" type="text">
+      </label>
+    </div>
+
+    <button [disabled]="!carEditForm.touched || !carEditForm.valid" type="submit">Zapisz</button>
+  </form>
+
+</div>

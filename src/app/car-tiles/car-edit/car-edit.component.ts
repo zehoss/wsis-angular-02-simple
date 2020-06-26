@@ -21,7 +21,7 @@ export class CarEditComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.carId = +params.id;
-      this.car = this.carService.findById(this.carId);
+      this.carService.findById(this.carId).subscribe(car => this.car = car);
     });
   }
 

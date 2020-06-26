@@ -7,6 +7,7 @@ import {AdminCarListComponent} from '../admin/admin-car-list/admin-car-list.comp
 import {AdminCustomerListComponent} from '../admin/admin-customer-list/admin-customer-list.component';
 import {CarDetailsComponent} from '../car-tiles/car-details/car-details.component';
 import {CarEditComponent} from '../car-tiles/car-edit/car-edit.component';
+import {AdminCarEditComponent} from '../admin/admin-car-list/admin-car-edit/admin-car-edit.component';
 
 const routing: Routes = [
   {path: '', redirectTo: '/cars', pathMatch: 'full'},
@@ -19,6 +20,7 @@ const routing: Routes = [
     children: [
       {path: '', redirectTo: 'cars', pathMatch: 'full'},
       {path: 'cars', component: AdminCarListComponent},
+      {path: 'cars/:id/edit', component: AdminCarEditComponent},
       {path: 'customers', component: AdminCustomerListComponent},
     ]
   }
