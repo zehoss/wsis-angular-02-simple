@@ -15,6 +15,7 @@ import {AdminCustomerListComponent} from './admin/admin-customer-list/admin-cust
 import {CarDetailsComponent} from './car-tiles/car-details/car-details.component';
 import {CarEditComponent} from './car-tiles/car-edit/car-edit.component';
 import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ export class CarTileComponent implements OnInit {
   @Input() price;
   @Input() limit;
   @Input() available;
+  @Input() platesNumber;
 
 
   constructor() {

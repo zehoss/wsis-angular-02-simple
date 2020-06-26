@@ -1,7 +1,8 @@
 export class Car {
   id: number;
-  carName: string;
+  name: string;
   price: number;
   limit: number;
+  platesNumber: string;
   available: boolean;
 }
